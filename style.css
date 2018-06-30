@@ -1,0 +1,186 @@
+@font-face
+		{
+			font-family: "font";
+			src: url('font.ttf');
+		}
+
+		body
+		{
+			font-family: "font", Helvetica, Arial, sans-serif;
+			margin : 0;
+			background-color : black;
+		}
+
+		.sidebar
+		{
+			height: 100%;
+			width: 300px;
+			position: fixed;
+			background-color : black;
+			text-align : center;
+			-webkit-box-shadow: 5px 0px 100px 8px red;
+			-moz-box-shadow: 5px 0px 100px 8px red;
+			box-shadow: 5px 0px 100px 8px red;
+		}
+
+		.buttongroup
+		{
+		margin :20px 0px;
+		}
+
+		.buttongroup a:hover .title
+		{
+			transition : 0.7s;
+			background-color : grey;
+			color : black;
+			border : 7px solid black;
+			border-left : 7px solid red;
+		}
+
+		.buttongroup a .title
+		{
+			width : 284px;
+			padding : 20px 0px;
+			text-align : center;
+			transition : 0.7s;
+			background-color : black;
+			color : white;
+			border : 7px solid black;
+		}
+
+		.carre
+		{
+			width:50px;
+			height:50px;
+			text-decoration:none;
+			color:white;
+			background-color:white;
+			opacity : 0.5;
+			margin : auto;
+			display : inline-block;
+			border-radius : 100%;
+		}
+
+		i
+		{
+			font-size : 20px;
+			color :white;
+			padding : 15px 0px; 
+		}
+		
+		.reseaux .carre{
+			background-color : white;
+			transition : 0.5s;
+		}
+		
+		.twitter .carre{
+			background-color : #00aded;
+		}
+		
+		.youtube .carre{
+			background-color : #dc231f;
+		}
+		
+		.facebook .carre{
+			background-color : #6678ae;
+		}
+		
+		.twitch .carre{
+			background-color : #4b367c;
+		}
+		
+		.discord .carre{
+			background-color : #6d82cb;
+		}
+		
+		.reseaux:hover .carre{
+			opacity : 0.75;
+			transition : 0.5s;
+		}
+
+		.logo
+		{
+			border-radius : 100%;
+			border : 3px solid white;
+			width : 65%;
+			height : auto;
+		}
+
+		.dropdown-container
+		{
+			display: none;
+		}
+
+		.menuicon {
+		display : none;
+		}
+		
+		.dropdown:hover .dropdown-container
+		{
+			display: block;
+		}
+		.content {
+		margin-left: 300px;
+		font-size: 20px;
+		text-align :center;
+		}
+		iframe {
+		margin : 100px 2%;
+		}
+		@media screen and (max-width: 1520px) {
+
+		iframe {
+		margin : 100px 1%;
+		}
+
+		}
+		
+		@media screen and (max-width: 1470px) {
+
+		iframe {
+		margin : 100px 0%;
+		}
+
+		}
+		@media screen and (max-width: 1425px) {
+
+		.chat {
+		display : none;
+		whidth : 0px;
+		position : absolute;
+		opacity : 0;		
+		}
+		
+		.video {
+		width : 100%;
+		}
+
+		
+		}
+		
+		@media screen and (max-width: 1100px) {
+		.content {
+		margin-left :0px;
+		}
+		
+		.menuicon {
+		display : block;
+		}
+		
+		.sidebar {
+		display :none;
+		-webkit-box-shadow: 0px 0px 0px 0px black;
+		-moz-box-shadow: 0px 0px 0px 0px black;
+		box-shadow: 0px 0px 0px 0px black;
+		width : 100%;
+		}
+		
+
+		}
+		
+		@media screen and (min-width: 1101px) {
+			
+		.sidebar {
+		display : block;
+		
+		}
